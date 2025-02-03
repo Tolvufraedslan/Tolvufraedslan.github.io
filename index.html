@@ -11,6 +11,9 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             width: 80%;
@@ -19,6 +22,7 @@
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            flex: 1;
         }
         .header {
             background: #1d4f91;
@@ -66,6 +70,16 @@
             margin-right: 10px;
             color: #1d4f91;
         }
+        .footer {
+            background: #1d4f91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +111,12 @@
     <div class="container" style="margin-top: 30px;">
         <h2>Önnur námskeið</h2>
         <p>Fleiri spennandi námskeið verða í boði fljótlega!</p>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Tölvufræðslan Akureyri | Allur réttur áskilinn</p>
+        <p>📞 Sími: 462-7899 | 📧 Netfang: <a href="mailto:tf@tf.is" style="color: white; text-decoration: none;">tf@tf.is</a></p>
+        <p>🆔 Kt: 681288-1399 | 💳 Banki: 1187-26-49999</p>
     </div>
 </body>
 </html>
