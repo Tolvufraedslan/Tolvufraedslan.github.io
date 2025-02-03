@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tölvufræðslan Akureyri – Gervigreindarnámskeið</title>
     <style>
-.styled-list {
-    list-style-type: none; 
-    padding: 0;
-    text-align: left;
-    max-width: 600px;
-    margin: auto;
-}
-
-.styled-list li {
-    font-size: 18px;
-    padding: 8px 0;
-    display: flex;
-    align-items: center;
-}
-
-.styled-list li::before {
-    content: "✔️"; 
-    margin-right: 10px;
-    color: #1d4f91;
-}
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -60,19 +40,37 @@
             color: white;
             padding: 15px 25px;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
+            font-size: 20px;
+            border-radius: 8px;
             display: inline-block;
-            margin-top: 20px;
+            transition: background 0.3s;
         }
         .button:hover {
             background: #d35400;
+        }
+        .styled-list {
+            list-style-type: none; 
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        .styled-list li {
+            font-size: 18px;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        .styled-list li::before {
+            content: "✔️"; 
+            margin-right: 10px;
+            color: #1d4f91;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="tf.jpg" alt="Tölvufræðslan Akureyri Logo" class="logo">
+        <img src="image.png" alt="Tölvufræðslan Akureyri Logo" class="logo">
         <h1>Tölvufræðslan Akureyri</h1>
     </div>
     
@@ -80,21 +78,19 @@
         <h2>Gervigreindarnámskeið</h2>
         <p>Gervigreind er ekki bara framtíðin – hún er nútíminn!</p>
         <p>Á þessu 6 klukkustunda staðnámskeiði lærir þú að nýta AI til að einfalda lífið, spara tíma og fá betri yfirsýn yfir dagleg verkefni.</p>
-        <p>Hvað lærir þú?
-            <ul class="styled-list">
-    <li> Hvernig gervigreind virkar og hvernig hún hjálpar þér</li>
-    <li> Notkun einfaldra AI-forrita til leitar, skrifa og skipulagningar</li>
-    <li> Verklegar æfingar – þú prófar AI sjálf/ur</li>
-    <li> Að fjarlægja ótta og auka færni í tækninni</li>
-    <li> Umræður og svör við algengum spurningum – allt sett fram á skjá og aðgengilegan hátt</li>
-</ul>
-            <br>
-          📍 Staðnám – 6 klst. yfir tvo daga
-            📆 Tvisvar í viku, 3 klst. í senn
-            💰 Verð: 14.990 kr.
-            📍 Staðsetning: [Kennslustofan þín hér].</p>
-        <p><strong>Kennt í staðnámi – 6 klukkustundir yfir tvo daga.</strong></p>
-        <p><strong>Verð: 14.990 kr.</strong></p>
+        
+        <h3>✅ Hvað lærir þú?</h3>
+        <ul class="styled-list">
+            <li>Hvernig gervigreind virkar og hvernig hún hjálpar þér</li>
+            <li>Notkun einfaldra AI-forrita til leitar, skrifa og skipulagningar</li>
+            <li>Verklegar æfingar – þú prófar AI sjálf/ur</li>
+            <li>Að fjarlægja ótta og auka færni í tækninni</li>
+            <li>Umræður og svör við algengum spurningum – allt sett fram á skjá og aðgengilegan hátt</li>
+        </ul>
+        
+        <p>📍 Staðnám – 6 klst. yfir tvo daga 🗓️ Tvisvar í viku, 3 klst. í senn 💰 Verð: 14.990 kr.</p>
+        <p>🏫 Staðsetning: [Kennslustofan þín hér].</p>
+        
         <a href="#" class="button">Skráðu þig núna</a>
     </div>
     
@@ -102,5 +98,7 @@
         <h2>Önnur námskeið</h2>
         <p>Fleiri spennandi námskeið verða í boði fljótlega!</p>
     </div>
+    <div id="courses-list"></div>
+    <script src="script.js"></script>
 </body>
 </html>
