@@ -3,139 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Námskeið - Canva | Tölvufræðslan Akureyri</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Lærðu að nýta Canva fyrir auglýsingar, kynningar og verkefni. Skapðu faglega hönnun án þess að þurfa grafískan hönnuð!">
-    <meta name="keywords" content="Canva námskeið, grafísk hönnun, auglýsingar, kynningar, námskeið Akureyri">
-    <meta name="author" content="Tölvufræðslan Akureyri">
-
+    <title>Skráning - AI námskeið</title>
     <style>
-        /* Grunnstílar */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         header {
             background: #003366;
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-
-        /* Stílar fyrir námskeiðstexta */
-        .course-info {
-            background-color: #fff;
+        .form-container {
+            background: #fff;
             padding: 20px;
-            margin: 20px auto;
-            width: 90%;
-            max-width: 900px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
         }
-        h2 {
+        .form-container h2 {
             text-align: center;
-            font-size: 2em;
-            color: #003366;
+            margin-bottom: 20px;
         }
-        ul {
-            list-style: none;
-            padding-left: 0;
+        .form-group {
+            margin-bottom: 20px;
         }
-        ul li {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        /* Skráningahnappur */
-        .button {
+        .form-group label {
             display: block;
-            width: 200px;
-            margin: 20px auto;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
             padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button {
+            padding: 10px 20px;
             background: #003366;
-            color: #fff;
-            text-align: center;
+            color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1.2em;
-        }
-        .button:hover {
-            background-color: #005b8d;
-        }
-
-        /* Fótur */
-        footer {
-            background: #003366;
-            color: #fff;
-            padding: 20px;
+            font-size: 16px;
             text-align: center;
         }
-        footer p {
-            margin: 0;
-            font-size: 1.1em;
+        .checkbox-container {
+            display: flex;
+            align-items: center;
         }
-        footer a {
-            color: #fff;
-            text-decoration: none;
+        .checkbox-container label {
+            margin-left: 10px;
+            font-size: 14px;
         }
-
-        /* Responsív stílar */
-        @media screen and (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            .course-info {
-                width: 95%;
-            }
-            .button {
-                font-size: 1em;
-            }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Skráning - AI námskeið</h1>
+        <p>Skref fyrir skref að nýta ChatGPT og gervigreind í daglegu lífi og starfi</p>
+    </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Fylla út skráningareyðublað</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="fullt_nafn">Fullt nafn:</label>
+                    <input type="text" id="fullt_nafn" name="fullt_nafn" required>
+                </div>
+                <div class="form-group">
+                    <label for="kennitala">Kennitala:</label>
+                    <input type="text" id="kennitala" name="kennitala" required>
+                </div>
+                <div class="form-group">
+                    <label for="heimilisfang">Heimilisfang:</label>
+                    <input type="text" id="heimilisfang" name="heimilisfang" required>
+                </div>
+                <div class="form-group">
+                    <label for="netfang">Netfang:</label>
+                    <input type="email" id="netfang" name="netfang" required>
+                </div>
+                <div class="form-group">
+                    <label for="simi">Símanúmer:</label>
+                    <input type="tel" id="simi" name="simi" required>
+                </div>
+                <div class="form-group">
+                    <label for="greiduselid">Greiðsluleið:</label>
+                    <select id="greiduselid" name="greiduselid">
+                        <option value="millifærslu">Millifærslu</option>
+                        <option value="kreditkort">Kreditkort</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="athugasemdir">Athugasemdir:</label>
+                    <textarea id="athugasemdir" name="athugasemdir"></textarea>
+                </div>
 
-<header>
-    <h1>Námskeið - Búðu til auglýsingar og kynningar með <b>Canva</b></h1>
-    <p>Lærðu hvernig þú getur nýtt Canva til að búa til faglega hönnun og auglýsingar</p>
-</header>
-
-<div class="course-info">
-    <h2>Upplýsingar um námskeiðið</h2>
-    <p><strong>Lengd:</strong> 6 klst. námskeið yfir tvo daga</p>
-    <p><strong>Verð:</strong> 19.990 kr.</p>
-    <p>Í þessu námskeiði ferðu í gegnum hvernig þú getur nýtt <b>Canva</b>  til að búa til auglýsingar, kynningar og önnur grafísk verkefni án þess að þurfa grafískan hönnuð. Við útskýrum hvernig <b>Canva</b> gerir það mögulegt að búa til faglega hönnun á einfaldan og skiljanlegan hátt.</p>
-
-    <h3>Hvað þú lærir:</h3>
-    <ul>
-        <li>Grunnatriði í <b>Canva</b> og hvernig á að nýta það í daglegu lífi.</li>
-        <li>Hvernig á að búa til auglýsingar og kynningar fyrir fyrirtæki eða persónuleg verkefni.</li>
-        <li>Skapandi verkfæri í <b>Canva</b> til að bæta verkefni og bæta fagurfræði.</li>
-        <li>Hvernig á að nýta <b>Canva</b> til að skapa staðlaðar og viðhaldshæfar auglýsingar og kynningar.</li>
-    </ul>
-
-    <h3>Hvernig námskeiðið er kennt:</h3>
-    <p>Við munum nýta bæði fyrirlestur og hagnýtar æfingar til að tryggja að þú náir fullum skilningi á hvernig <b>Canva</b> virkar og hvernig þú getur nýtt það til að bæta eigin verkefni. Æfingarnar verða með einföldum skrefum til að þú getir byrjað strax að nýta það í daglegu lífi.</p>
-
-    <p><a href="skraning.html?course=canva" class="button">Skrá mig</a></p>
-</div>
-
-<footer>
-    <p><strong>Tölvufræðslan Akureyri</strong></p>
-    <p>Sími: 462-7899 | Netfang: <a href="mailto:tf@tf.is">tf@tf.is</a></p>
-    <p>KT: 681288-1399 | Banki: 1187-26-49999</p>
-</footer>
-
+                <div class="buttons">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="skuldbinding" name="skuldbinding" required>
+                        <label for="skuldbinding">Ég skuldbindi mig til að greiða námskeiðsgjaldið eftir að ég hef skráð mig.</label>
+                    </div>
+                    <a href="#" class="button">Skrá mig</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Tölvufræðslan Akureyri | Sími: 462-7899 | Netfang: tf@tf.is | KT: 681288-1399 | Banki: 1187-26-49999</p>
+    </footer>
 </body>
 </html>
