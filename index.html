@@ -3,50 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Námskeið - Skráning | Tölvufræðslan Akureyri</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Lærðu að nota Canva og gervigreind í starfi og daglegu lífi. Skráðu þig á námskeið hjá Tölvufræðslunni Akureyri.">
-    <meta name="keywords" content="Canva námskeið, gervigreind, auglýsingar, kynningar, tölvufræðsla, námskeið Akureyri">
-    <meta name="author" content="Tölvufræðslan Akureyri">
-    
+    <title>Tölvufræðslan Akureyri | Námskeið</title>
+
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
+        .header h1 { margin: 0; }
+        .header p { margin: 10px 0 0; }
         .container { width: 80%; margin: auto; overflow: hidden; }
-        header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
-        .button { display: block; width: 200px; margin: 20px auto 0 auto; padding: 10px; background: #003366; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; }
-        .course-list { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 40px; }
-        .course { background: #fff; padding: 20px; margin: 10px; width: 350px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
-        .course img { width: 120px; height: 120px; object-fit: contain; margin: 0 auto 10px auto; }
+        .course-card { background: #fff; padding: 20px; margin: 10px; width: 300px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; display: inline-block; vertical-align: top; }
+        .course-card img { width: 100%; height: auto; object-fit: cover; border-radius: 5px; }
+        .course-card h3 { margin: 10px 0; }
+        .course-card p { color: #777; }
+        .button { display: inline-block; background: #003366; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        .footer { background: #003366; color: #fff; text-align: center; padding: 10px 0; position: absolute; bottom: 0; width: 100%; }
+        .footer p { margin: 0; }
     </style>
 </head>
 <body>
-    <header>
-        <img src="tf.jpg" alt="Tölvufræðslan Logo" style="width: 150px; display: block; margin: 0 auto;">
+
+    <div class="header">
         <h1>Tölvufræðslan Akureyri</h1>
         <p>Nám sem nýtist!</p>
-    </header>
-    
+    </div>
+
     <div class="container">
         <h2 style="text-align: center;">Námskeið í boði</h2>
-        <div class="course-list">
-            <div class="course">
-                <img src="new-logo-name.png" alt="ChatGPT Logo">
-                <h3>Nýttu kraftinn í gervigreind</h3>
-                <p>6 klst. námskeið yfir tvo daga.</p>
-                <p>Verð: 15.990 kr.</p>
-                <p>Lærðu hvernig þú getur nýtt gervigreind í daglegu lífi og starfi, með einföldum tólum og aðferðum.</p>
-                <a href="ai-namskeid.html" class="button">Skoða nánar</a>
-            </div>
-            <div class="course">
-                <img src="Canva-Logo.png" alt="Canva Logo">
-                <h3>Búðu til auglýsingar og kynningar með Canva</h3>
-                <p>6 klst. námskeið yfir tvo daga.</p>
-                <p>Verð: 19.990 kr.</p>
-                <p>Búðu til auglýsingar fyrir fyrirtækið þitt, gerðu kynningar fyrir skóla eða vinnu og lærðu að nýta Canva í verkefnum.</p>
-                <a href="canva-namskeid.html" class="button">Skoða nánar</a>
-            </div>
+        <div class="course-card">
+            <img src="new-logo-name.png" alt="ChatGPT Logo">
+            <h3>Nýttu kraftinn í gervigreind</h3>
+            <p>6 klst. námskeið yfir tvo daga</p>
+            <p>Verð: 15.990 kr.</p>
+            <p>Lærðu hvernig þú getur nýtt gervigreind í daglegu lífi og starfi, með einföldum tólum og aðferðum.</p>
+            <a href="ai-namskeid.html" class="button">Skoða nánar</a>
+        </div>
+        <div class="course-card">
+            <img src="Canva-Logo.png" alt="Canva Logo">
+            <h3>Búðu til auglýsingar og kynningar með Canva</h3>
+            <p>6 klst. námskeið yfir tvo daga</p>
+            <p>Verð: 19.990 kr.</p>
+            <p>Búðu til auglýsingar fyrir fyrirtækið þitt, gerðu kynningar fyrir skóla eða vinnu og lærðu að nýta Canva í verkefnum.</p>
+            <a href="canva-namskeid.html" class="button">Skoða nánar</a>
         </div>
     </div>
+
+    <div class="footer">
+        <p>Tölvufræðslan Akureyri | Sími: 462-7899 | Netfang: tf@tf.is | KT: 681288-1399 | Banki: 1187-26-49999</p>
+    </div>
+
 </body>
 </html>
