@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Námskeið - AI | Tölvufræðslan Akureyri</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px; }
+        header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
+        .course-info { background: #fff; padding: 20px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+        .course-info h2 { text-align: center; }
+        .back-button { display: block; width: 200px; margin: 20px auto; padding: 10px; background: #003366; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Námskeið - Nýttu kraftinn í gervigreind</h1>
+    </header>
+    
+    <div class="container">
+        <div class="course-info">
+            <h2>AI námskeið - Nýttu kraftinn í gervigreind</h2>
+            <p>Í þessu námskeiði lærir þú hvernig þú getur nýtt gervigreind í daglegu lífi og starfi, með einföldum tólum og aðferðum. Við skoðum hvernig hægt er að nýta gervigreind til að bæta ferla og auka skilvirkni í vinnu og persónulegu lífi.</p>
+            <p>Verð: 15.990 kr.</p>
+            <p><strong>Viðfangsefni:</strong></p>
+            <ul>
+                <li>Grunnatriði gervigreindar</li>
+                <li>Hvernig gervigreind getur hjálpað í daglegu lífi</li>
+                <li>Verkefni og áhugaverðir verkefnar</li>
+            </ul>
+            <a href="skraning.html?course=ai" class="back-button">Skrá mig</a>
+        </div>
+    </div>
+</body>
+</html>
