@@ -8,9 +8,10 @@
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
         .container { width: 80%; margin: auto; overflow: hidden; }
         header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
-        .button { display: inline-block; width: 200px; margin: 10px; padding: 10px; background: #003366; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; }
-        .course-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .course { background: #fff; padding: 20px; margin: 10px; width: 300px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; }
+        .button { display: inline-block; width: 200px; margin-top: 10px; padding: 10px; background: #003366; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; }
+        .course-list { display: flex; justify-content: space-around; align-items: stretch; flex-wrap: wrap; gap: 20px; }
+        .course { background: #fff; padding: 20px; margin: 10px; width: 350px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+        .course img { width: 100px; margin: 0 auto 10px auto; }
     </style>
 </head>
 <body>
@@ -24,7 +25,7 @@
         <h2 style="text-align: center;">Námskeið í boði</h2>
         <div class="course-list">
             <div class="course">
-                <img src="ai_logo.png" alt="AI Logo" style="width: 100px; display: block; margin: 0 auto;">
+                <img src="ai_logo.png" alt="AI Logo">
                 <h3>Nýttu kraftinn í gervigreind</h3>
                 <p>6 klst. námskeið yfir tvo daga.</p>
                 <p>Verð: 14.990 kr.</p>
@@ -32,7 +33,7 @@
                 <a href="skraning.html?course=ai" class="button">Skrá mig</a>
             </div>
             <div class="course">
-                <img src="canva_logo.png" alt="Canva Logo" style="width: 100px; display: block; margin: 0 auto;">
+                <img src="canva_logo.png" alt="Canva Logo">
                 <h3>Búðu til auglýsingar og kynningar með Canva</h3>
                 <p>6 klst. námskeið yfir tvo daga.</p>
                 <p>Verð: 9.990 kr.</p>
