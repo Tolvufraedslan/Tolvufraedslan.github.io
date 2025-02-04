@@ -73,6 +73,17 @@
         form button:hover {
             background-color: #005b8d;
         }
+        
+        /* Haki fyrir skuldbindingu */
+        .checkbox-container {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        .checkbox-container input {
+            margin-right: 10px;
+        }
 
         /* Fótur */
         footer {
@@ -148,6 +159,13 @@
             <label for="note">Athugasemdir:</label>
             <textarea id="note" name="note" rows="4"></textarea>
         </div>
+        
+        <!-- Haki fyrir skuldbindingu -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="confirmation" name="confirmation" required>
+            <label for="confirmation">Ég skuldbindi mig til að greiða námskeiðsgjaldið eftir að ég hef skráð mig.</label>
+        </div>
+        
         <div>
             <button type="submit">Skrá mig</button>
         </div>
