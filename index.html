@@ -3,132 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tölvufræðslan Akureyri – Gervigreindarnámskeið</title>
+    <title>Námskeið - Skráning</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            flex: 1;
-        }
-        .header {
-            background: #1d4f91;
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .logo {
-            height: 60px;
-            display: block;
-        }
-        .button {
-            background: #e67e22;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 8px;
-            display: inline-block;
-            transition: background 0.3s;
-        }
-        .button:hover {
-            background: #d35400;
-        }
-        .styled-list {
-            list-style-type: none; 
-            padding: 0;
-            text-align: left;
-            max-width: 600px;
-            margin: auto;
-        }
-        .styled-list li {
-            font-size: 18px;
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-        }
-        .styled-list li::before {
-            content: "✔️"; 
-            margin-right: 10px;
-            color: #1d4f91;
-        }
-        .footer {
-            background: #1d4f91;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .footer p {
-            margin: 5px 0;
-        }
-        .section-title {
-            font-size: 30px;
-            font-weight: bold;
-            color: #1d4f91;
-            margin-top: 20px;
-        }
-        .highlight-text {
-            font-size: 26px;
-            font-weight: bold;
-            color: #1d4f91;
-            margin-top: 10px;
-        }
-        .subtext {
-            font-size: 20px;
-            color: #333;
-            margin-top: 5px;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { width: 80%; margin: auto; overflow: hidden; }
+        header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
+        .button { display: block; width: 200px; margin: 10px auto; padding: 10px; background: #ff9800; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; }
+        .course-list { display: flex; flex-wrap: wrap; justify-content: center; }
+        .course { background: #fff; padding: 20px; margin: 10px; width: 300px; border-radius: 5px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); text-align: center; }
+        .register-box { text-align: center; padding: 20px; }
+        .checkbox-container { margin-top: 10px; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="tf.jpg" alt="Tölvufræðslan Akureyri Logo" class="logo">
+    <header>
         <h1>Tölvufræðslan Akureyri</h1>
-    </div>
+        <p>Lærdómur fyrir framtíðina!</p>
+    </header>
     
     <div class="container">
-        <h2 class="highlight-text">Gervigreind er ekki bara framtíðin – hún er nútíminn!</h2>
-        <p class="subtext">🚀 **Skráðu þig á námskeið og taktu forskot á framtíðina!**
-Þetta 6 klukkustunda námskeið veitir þér hagnýta þekkingu á gervigreind og hvernig þú getur nýtt hana í daglegu lífi. Lærðu að spara tíma, skipuleggja betur og nýta tæknina í þína þágu – án þess að þurfa tæknilega kunnáttu!</p>
-        
-        <h3 class="section-title">Hvað lærir þú?</h3>
-        <ul class="styled-list">
-            <li>Hvernig gervigreind virkar og hvernig hún hjálpar þér</li>
-            <li>Notkun einfaldra AI-forrita til leitar, skrifa og skipulagningar</li>
-            <li>Verklegar æfingar – þú prófar AI sjálfur</li>
-            <li>Að fjarlægja ótta og auka færni í tækninni</li>
-            <li>Umræður og svör við algengum spurningum – allt sett fram á skjá og aðgengilegan hátt</li>
-        </ul>
-        
-        <p class="subtext"><b>📍 Staðnám – 6 klst. yfir tvo daga 🗓️ Tvisvar í viku, 3 klst. í senn 💰 Verð: 14.990 kr.</b></p>
-        
-        <a href="skraning.html" class="button">Skráðu þig núna</a>
+        <h2 style="text-align: center;">Námskeið í boði</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Gervigreind í daglegu lífi</h3>
+                <p>6 klst. námskeið yfir tvo daga.</p>
+                <p>Verð: 14.990 kr.</p>
+                <a href="skraning.html?course=ai" class="button">Skrá mig</a>
+            </div>
+            <div class="course">
+                <h3>Lærðu á Canva</h3>
+                <p>3 klst. námskeið fyrir byrjendur.</p>
+                <p>Verð: 9.990 kr.</p>
+                <a href="skraning.html?course=canva" class="button">Skrá mig</a>
+            </div>
+        </div>
     </div>
-    
-    <div class="footer">
-        <p>&copy; 2025 Tölvufræðslan Akureyri | Allur réttur áskilinn</p>
-        <p>📞 Sími: 462-7899 | 📧 Netfang: <a href="mailto:tf@tf.is" style="color: white; text-decoration: none;">tf@tf.is</a></p>
-        <p>🆔 Kt: 681288-1399 | 💳 Banki: 1187-26-49999</p>
+
+    <div class="container">
+        <h2 style="text-align: center;">Skráning á námskeið</h2>
+        <div class="register-box">
+            <form id="registration-form">
+                <label for="course">Veldu námskeið:</label>
+                <select id="course" name="course">
+                    <option value="ai">Gervigreind í daglegu lífi</option>
+                    <option value="canva">Lærðu á Canva</option>
+                </select>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="payment-confirm" required>
+                    <label for="payment-confirm">Ég staðfesti að ég þarf að greiða fyrir námskeiðið eftir bókun.</label>
+                </div>
+                <button type="submit" class="button">Skrá mig</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
