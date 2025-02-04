@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Námskeið - Canva | Tölvufræðslan Akureyri</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px; }
+        header { background: #003366; color: #fff; padding: 20px 0; text-align: center; }
+        .course-info { background: #fff; padding: 20px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); }
+        .course-info h2 { text-align: center; }
+        .back-button { display: block; width: 200px; margin: 20px auto; padding: 10px; background: #003366; color: #fff; text-align: center; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Námskeið - Búðu til auglýsingar og kynningar með Canva</h1>
+    </header>
+    
+    <div class="container">
+        <div class="course-info">
+            <h2>Canva námskeið - Búðu til auglýsingar og kynningar</h2>
+            <p>Í þessu námskeiði lærir þú hvernig þú getur búið til auglýsingar og kynningar með Canva. Við skoðum hvernig Canva getur hjálpað fyrirtækjum, skólum og einstaklingum að búa til faglega grafík og kynningar á einfaldan hátt.</p>
+            <p>Verð: 19.990 kr.</p>
+            <p><strong>Viðfangsefni:</strong></p>
+            <ul>
+                <li>Grunnatriði Canva</li>
+                <li>Hvernig á að búa til auglýsingar og kynningar</li>
+                <li>Verkefni til að bæta hæfni í hönnun</li>
+            </ul>
+            <a href="skraning.html?course=canva" class="back-button">Skrá mig</a>
+        </div>
+    </div>
+</body>
+</html>
