@@ -10,15 +10,18 @@
         header { background: #ffffff; color: #000; padding: 20px 0; text-align: center; }
         
 
-      .logo img {
-            width: 300px;
-        }
-        
-        .banner img {
-            width: 100%;
-            object-fit: cover;
-            display: block;
-        }
+.logo {
+    display: flex;
+    justify-content: center; /* Centers the logo horizontally */
+    align-items: center; /* Centers vertically if height is specified */
+    width: 100%; /* Ensures it spans full width */
+    padding: 10px 0; /* Optional spacing */
+}
+
+.logo img {
+    width: 300px;
+    height: auto; /* Keeps aspect ratio */
+}
 
         .container { width: 80%; margin: auto; overflow: hidden; }
 
