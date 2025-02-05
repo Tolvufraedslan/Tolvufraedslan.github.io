@@ -25,15 +25,17 @@
 
 .banner {
     display: flex;
-    justify-content: center; /* Centers the banner horizontally */
-    align-items: center; /* Centers vertically if needed */
-    width: 100%;
-    padding: 20px 0; /* Adjust padding as needed */
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    padding: 0; /* Remove padding to ensure full width */
+    overflow: hidden; /* Prevent any unwanted overflow */
 }
 
 .banner img {
-    max-width: 100%; /* Ensures responsiveness */
+    width: 100%; /* Makes the image span the entire width */
     height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra spacing below the image */
 }
         
         .container { width: 80%; margin: auto; overflow: hidden; }
